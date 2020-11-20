@@ -8,10 +8,12 @@ import { RoutingModule } from 'src/app/routing.module';
 import { RecipesViewComponent } from './recipes-view/recipes-view.component';
 import { RecipeCommonModule } from '../common/common.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RecipePreviewComponent } from './recipes-view/recipe-preview/recipe-preview.component';
 
 @NgModule({
   declarations: [
-    RecipesViewComponent
+    RecipesViewComponent,
+    RecipePreviewComponent
   ],
   imports: [
     BrowserModule,

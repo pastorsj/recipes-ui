@@ -3,5 +3,8 @@
                      ariaLabel="Add new recipe">
 </recipe-search-bar>
 <recipe-section-container>
-  View all recipes
+  <recipe-preview *ngFor="let recipe of recipes"
+                  [recipePreview]="recipe"
+                  (onViewClicked)="onViewClicked(recipe)"
+                  (onEditClicked)="onEditClicked(recipe)"></recipe-preview>
 </recipe-section-container>

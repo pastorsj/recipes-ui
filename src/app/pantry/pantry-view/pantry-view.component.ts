@@ -25,7 +25,7 @@ export class PantryViewComponent implements OnInit {
     this.router.navigateByUrl('pantry/add');
   }
 
-  filter(filter: Event): void {
+  filter(filter: string): void {
     alert('Search not implemented yet');
   }
 }
