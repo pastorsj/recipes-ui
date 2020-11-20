@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <span class="title" routerLink="/"><mat-icon>menu_book</mat-icon> Recipes</span>
+  <span class="remaining-space"></span>
+  <span>
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Sam Pastoriza</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Sign Out</button>
+    </mat-menu>
+  </span>
+</mat-toolbar>
+<mat-drawer-container class="drawer-container">
+  <mat-drawer mode="side" opened class="drawer">
+    <mat-list>
+      <mat-list-item>
+        <h3 class="list-header" matLine>Recipes</h3>
+        <span class="list-item"
+              matLine
+              routerLink="/recipes"
+              routerLinkActive="active-link"><span class="list-text">View All</span> <mat-icon mat-light md-18>chevron_right</mat-icon></span>
+      </mat-list-item>
+      <mat-list-item>
+        <h3 class="list-header" matLine>Pantry</h3>
+        <span class="list-item"
+              matLine
+              routerLink="/pantry"
+              routerLinkActive="active-link"><span class="list-text">View All</span> <mat-icon mat-light md-18>chevron_right</mat-icon></span>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
