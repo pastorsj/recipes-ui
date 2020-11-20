@@ -16,18 +16,19 @@
         <span class="list-item"
               matLine
               routerLink="/recipes"
-              routerLinkActive="active-link"><span class="list-text">View All</span> <mat-icon mat-light md-18>chevron_right</mat-icon></span>
+              routerLinkActive="active-link"><span class="list-text">View</span> <mat-icon mat-light md-18>chevron_right</mat-icon></span>
       </mat-list-item>
       <mat-list-item>
         <h3 class="list-header" matLine>Pantry</h3>
         <span class="list-item"
               matLine
               routerLink="/pantry"
-              routerLinkActive="active-link"><span class="list-text">View All</span> <mat-icon mat-light md-18>chevron_right</mat-icon></span>
+              routerLinkActive="active-link"><span class="list-text">View</span> <mat-icon mat-light md-18>chevron_right</mat-icon></span>
       </mat-list-item>
     </mat-list>
   </mat-drawer>
   <mat-drawer-content>
+    <recipe-breadcrumbs></recipe-breadcrumbs>
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

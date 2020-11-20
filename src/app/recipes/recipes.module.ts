@@ -6,6 +6,8 @@ import { MaterialModule } from 'src/app/material.module';
 import { RoutingModule } from 'src/app/routing.module';
 
 import { RecipesViewComponent } from './recipes-view/recipes-view.component';
+import { RecipeCommonModule } from '../common/common.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { RecipesViewComponent } from './recipes-view/recipes-view.component';
     BrowserModule,
     RoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RecipeCommonModule,
+    ReactiveFormsModule,
   ],
   providers: [],
 })

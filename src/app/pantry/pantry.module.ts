@@ -6,6 +6,7 @@ import { MaterialModule } from 'src/app/material.module';
 import { RoutingModule } from 'src/app/routing.module';
 
 import { PantryViewComponent } from './pantry-view/pantry-view.component';
+import { RecipeCommonModule } from '../common/common.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PantryViewComponent } from './pantry-view/pantry-view.component';
     BrowserModule,
     RoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RecipeCommonModule
   ],
   providers: [],
 })

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PantryViewComponent } from 'src/pantry/pantry-view/pantry-view.component';
-import { RecipesViewComponent } from 'src/recipes/recipes-view/recipes-view.component';
+import { PantryViewComponent } from 'src/app/pantry/pantry-view/pantry-view.component';
+import { RecipesViewComponent } from 'src/app/recipes/recipes-view/recipes-view.component';
 
 const routes: Routes = [
   {
